@@ -1,0 +1,110 @@
+[
+   {
+      "id": 1,
+      "title": "Introduction to Algorithms",
+      "author": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
+      "description": "A comprehensive textbook covering algorithms, data structures, and computational problem-solving.",
+      "category": "Tech",
+      "available_quantity": 5,
+      "image_url": "https://covers.openlibrary.org/b/id/11106524-L.jpg"
+   },
+   {
+      "id": 2,
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt and David Thomas",
+      "description": "A foundational book on software craftsmanship, problem-solving, and building resilient systems.",
+      "category": "Tech",
+      "available_quantity": 11,
+      "image_url": "https://m.media-amazon.com/images/I/41as+WafrFL._SY355_.jpg"
+   },
+   {
+      "id": 3,
+      "title": "A Brief History of Time",
+      "author": "Stephen Hawking",
+      "description": "An accessible exploration of cosmology, black holes, time, and the origins of the universe.",
+      "category": "Science",
+      "available_quantity": 9,
+      "image_url": "https://covers.openlibrary.org/b/id/7888152-L.jpg"
+   },
+   {
+      "id": 4,
+      "title": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "description": "A deeply moving story of friendship, betrayal, guilt, and redemption across Afghanistan and the United States.",
+      "category": "Story",
+      "available_quantity": 7,
+      "image_url": "https://covers.openlibrary.org/b/id/12641914-L.jpg"
+   },
+   {
+      "id": 5,
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "description": "A practical guide to writing readable, maintainable, and professional-quality software.",
+      "category": "Tech",
+      "available_quantity": 15,
+      "image_url": "https://m.media-amazon.com/images/I/41jEbK-jG+L._SY355_.jpg"
+   },
+   {
+      "id": 6,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "description": "A powerful coming-of-age story set in the American South, centered on justice, empathy, and moral courage.",
+      "category": "Story",
+      "available_quantity": 8,
+      "image_url": "https://covers.openlibrary.org/b/id/15153357-L.jpg"
+   },
+   {
+      "id": 7,
+      "title": "Design Patterns",
+      "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+      "description": "A classic reference for reusable object-oriented design solutions and architecture patterns.",
+      "category": "Tech",
+      "available_quantity": 6,
+      "image_url": "https://covers.openlibrary.org/b/id/6601119-L.jpg"
+   },
+   {
+      "id": 8,
+      "title": "The Selfish Gene",
+      "author": "Richard Dawkins",
+      "description": "A landmark book explaining evolution from the perspective of genes and natural selection.",
+      "category": "Science",
+      "available_quantity": 14,
+      "image_url": "https://covers.openlibrary.org/b/id/7891217-L.jpg"
+   },
+   {
+      "id": 9,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "description": "A classic novel about love, class, misunderstanding, and the social expectations of Regency-era England.",
+      "category": "Story",
+      "available_quantity": 10,
+      "image_url": "https://covers.openlibrary.org/b/id/8467127-L.jpg"
+   },
+   {
+      "id": 10,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "description": "A journey of self-discovery about a shepherd who follows his dream and learns to listen to his heart.",
+      "category": "Story",
+      "available_quantity": 12,
+      "image_url": "https://m.media-amazon.com/images/I/71aFt4+OTOL._SY355_.jpg"
+   },
+   {
+      "id": 11,
+      "title": "The Gene",
+      "author": "Siddhartha Mukherjee",
+      "description": "A sweeping history of genetics, from inheritance and DNA to modern medicine and identity.",
+      "category": "Science",
+      "available_quantity": 4,
+      "image_url": "https://covers.openlibrary.org/b/id/12002334-L.jpg"
+   },
+   {
+      "id": 12,
+      "title": "Cosmos",
+      "author": "Carl Sagan",
+      "description": "A celebrated journey through the universe, science, astronomy, and humanity's place in nature.",
+      "category": "Science",
+      "available_quantity": 13,
+      "image_url": "https://covers.openlibrary.org/b/id/6799343-L.jpg"
+   }
+]
