@@ -14,11 +14,11 @@ export default function BannerSlider() {
    const banners = [
       {
          image: '/banner.jpg',
-         title: 'Every Book Opens a New World',
+         title: 'Find Your Next Read',
       },
       {
          image: '/banner2.jpg',
-         title: 'Where Readers Belong',
+         title: 'Every Book Opens a New World',
       },
       {
          image: '/banner3.jpg',
@@ -40,16 +40,16 @@ export default function BannerSlider() {
                disableOnInteraction: false,
             }}
             pagination={{
-               clickable: true,
+               clickable: true, // ✅ keep this if you want dots for manual control
             }}
-            navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
+            // navigation={true} → ❌ remove this to hide arrows
+            modules={[Autoplay, Pagination]} // ✅ only Autoplay + Pagination needed,Naviagation removed from this
             className="mySwiper"
          >
             {banners.map((banner, index) => (
                <SwiperSlide key={index}>
                   <div
-                     className="relative flex min-h-[85vh] items-center justify-center px-4 sm:px-6 md:justify-start md:px-20 lg:px-28 bg-cover bg-center mb-4"
+                     className="w-11/12 mx-auto relative flex min-h-[85vh] items-center justify-center px-4 sm:px-6 md:justify-start md:px-20 lg:px-28 bg-cover bg-center mb-4"
                      style={{
                         backgroundImage: `url(${banner.image})`,
                      }}
@@ -85,7 +85,7 @@ export default function BannerSlider() {
                               endContent={<MoveRight size={18} />}
                               className="font-semibold"
                            >
-                              Explore Books
+                              Browse Now
                            </Button>
 
                            <Button
