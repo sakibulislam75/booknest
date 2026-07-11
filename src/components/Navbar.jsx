@@ -11,7 +11,7 @@ const Navbar = () => {
    const user = session?.user;
 
    return (
-      <div className="border-b px-4 w-11/12 mx-auto">
+      <div className="border-b  w-11/12 mx-auto">
          <nav className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 pt-1">
             {/* Logo only */}
             <div className="flex items-center">
@@ -19,9 +19,9 @@ const Navbar = () => {
                   src="/Designer.png"
                   alt="logo"
                   width={70} // bigger size
-                  height={70} // keep equal for square logo
+                  height={70}
                   priority
-                  className="h-18 w-18 object-contain animate__animated animate__pulse"
+                  className="h-18 w-18 object-contain animate__animated animate__pulse animate__infinite rounded-full"
                />
             </div>
 
