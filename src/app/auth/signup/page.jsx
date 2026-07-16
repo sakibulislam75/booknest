@@ -11,8 +11,11 @@ import {
    Label,
    TextField,
 } from '@heroui/react';
-import { router } from 'better-auth/api';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+
+import { redirect, useRouter } from 'next/navigation';
+import { FaUserCheck } from 'react-icons/fa';
+import { GrGoogle } from 'react-icons/gr';
 import { toast } from 'react-toastify';
 
 export default function SignUpPage() {
@@ -27,18 +30,26 @@ export default function SignUpPage() {
          email: userData.email, // required
          password: userData.password, // required
          image: userData.image,
+         autoSignIn: false,
       });
       console.log(data, error);
       if (error) {
          toast.error(error.message);
       } else {
-         toast.success('Successfully signed up');
-         router.push('/');
+         await authClient.signOut();
+
+         toast.success('Registration successful. Please sign in.');
+         router.push('/auth/signin');
       }
+   };
+   const handleGoogleSignIn = async () => {
+      const data = await authClient.signIn.social({
+         provider: 'google',
+      });
    };
 
    return (
-      <Card className="border mx-auto w-125 py-10 mt-22">
+      <Card className="border mx-auto w-125 py-7 mt-10">
          <h1 className="text-center text-2xl font-bold">Sign Up</h1>
 
          <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
@@ -108,6 +119,17 @@ export default function SignUpPage() {
                </Button>
             </div>
          </Form>
+         <Button
+            variant="outline"
+            className="w-full flex items-center gap-2 mt-3"
+            onClick={handleGoogleSignIn}
+         >
+            <GrGoogle /> Sign In With Google
+         </Button>
+
+         <Button as={Link} href="/auth/signin" variant="outline" className="w-full">
+            <FaUserCheck /> Already have an account
+         </Button>
       </Card>
    );
 }
