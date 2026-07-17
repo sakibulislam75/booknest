@@ -14,6 +14,8 @@ import {
    TextField,
 } from '@heroui/react';
 import { GrGoogle } from 'react-icons/gr';
+import { UserPlus } from 'lucide-react';
+import Link from 'next/link';
 
 export default function SignInPage() {
    const onSubmit = async (e) => {
@@ -43,7 +45,6 @@ export default function SignInPage() {
       <div>
          <Card className=" border mx-auto w-125 py-10 mt-25">
             <h1 className="text-center text-2xl font-bold">Sign In</h1>
-
             <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
                <TextField
                   isRequired
@@ -99,12 +100,20 @@ export default function SignInPage() {
                   </Button>
                </div>
             </Form>
-
             <p className="text-center">Or</p>
-
             <Button variant="outline" className={'w-full'} onClick={handleGoogleSignIn}>
                <GrGoogle /> Sign In With Google
             </Button>
+
+            <p className="text-center mt-3 text-sm text-gray-600 dark:text-gray-400">
+               Don&apos;t have an account?{' '}
+               <Link
+                  href="/auth/signin"
+                  className="text-primary font-semibold hover:underline hover:text-primary/80 transition-colors"
+               >
+                  Sign Up
+               </Link>
+            </p>
          </Card>
       </div>
    );

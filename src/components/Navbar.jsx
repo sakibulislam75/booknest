@@ -15,14 +15,16 @@ const Navbar = () => {
          <nav className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 pt-1">
             {/* Logo only */}
             <div className="flex items-center">
-               <Image
-                  src="/Designer.png"
-                  alt="logo"
-                  width={70} // bigger size
-                  height={70}
-                  priority
-                  className="h-18 w-18 object-contain animate__animated animate__pulse animate__infinite rounded-full"
-               />
+               <Link href="/">
+                  <Image
+                     src="/Designer.png"
+                     alt="logo"
+                     width={70} // bigger size
+                     height={70}
+                     priority
+                     className="h-18 w-18 object-contain animate__animated animate__pulse animate__infinite rounded-full"
+                  />
+               </Link>
             </div>
 
             {/* Navigation */}

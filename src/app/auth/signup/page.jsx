@@ -36,8 +36,7 @@ export default function SignUpPage() {
       if (error) {
          toast.error(error.message);
       } else {
-         await authClient.signOut();
-
+         await authClient.signOut(); //protect auto login
          toast.success('Registration successful. Please sign in.');
          router.push('/auth/signin');
       }
