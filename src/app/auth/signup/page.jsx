@@ -126,9 +126,11 @@ export default function SignUpPage() {
             <GrGoogle /> Sign In With Google
          </Button>
 
-         <Button as={Link} href="/auth/signin" variant="outline" className="w-full">
-            <FaUserCheck /> Already have an account
-         </Button>
+         <Link href="/auth/signin">
+            <Button variant="outline" className="w-full">
+               <FaUserCheck /> Already have an account
+            </Button>
+         </Link>
       </Card>
    );
 }
