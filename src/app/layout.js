@@ -4,6 +4,10 @@ import { Bounce, ToastContainer } from 'react-toastify';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import 'animate.css';
+import dns from 'node:dns';
+
+// Use Google's DNS servers for Node.js DNS lookups
+dns.setServers(['8.8.8.8', '8.8.4.4']);
 
 const geistSans = Geist({
    variable: '--font-geist-sans',
