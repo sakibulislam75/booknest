@@ -1,6 +1,6 @@
 export const getAllBooks = async () => {
    try {
-      const res = await fetch('http://localhost:3000/books.json');
+      const res = await fetch('https://all-in-one-api-if2h.onrender.com/data');
       if (!res.ok) {
          throw new Error(`Request failed with status ${res.status}`);
       }
@@ -14,7 +14,7 @@ export const getAllBooks = async () => {
 
 export const getAllCategory = async () => {
    try {
-      const res = await fetch('http://localhost:3000/category.json');
+      const res = await fetch('https://all-in-one-api-if2h.onrender.com/categories');
       if (!res.ok) {
          throw new Error(`Request failed with status ${res.status}`);
       }
